@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Voltaire&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+        .item{
+            width: 100%;
+            height: 50vh;
+        }
+        .section{
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: rgba(233, 65, 65, 0.1);
+            border-radius: 5px;
+        }
+        .button{
+            width: 70vw;
+            height: 54px;
+            border-radius: 30px;
+            background: rgba(233, 65, 65, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+        }
+        .choice{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-top: 20px;
+            justify-content: center;
+
+        }
+        .heart{
+            width: 35px;
+            height: 35px;
+        }
+        .text{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 35px;
+            font-weight: 400;
+            padding-top: 20px;
+        }
+        .text-align{
+            display: flex;
+            font-family: 'Voltaire', sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            gap: 40px;
+        }
+        .description{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .title{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: rgba(0, 0, 0, 0.57);
+        }
+        .img{
+            width: 100%;
+            height:100%;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+    
+    </style>
+    <div class="container">
+        <div class="item">
+            <div class="section">
+                <img src="../html/img1.png" class="img">
+            </div>
+            <p class="text">Pinarello</p>
+            <div class="text-align">
+                <label style="color: rgba(0, 0, 0, 0.59);">15% OFF I 350$</label>
+                <label style=" text-decoration-line: line-through;">449$</label>
+            </div>
+             <p class="description">Description</p>
+            <div class="title">
+            <p>It is a very important form of writing as we write almost everything in paragraphs, be it an answer, essay, story, emails, etc.</p>
+            </div>
+            <div class="choice">
+                <img src="../html/Vector (1).svg" class="heart">
+                <a href="index2.html">
+                    <button class="button"><p style="color: rgba(255, 250, 250, 1); font-size: 25px;font-family: 'Voltaire', sans-serif;">Add to card</p></button> 
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

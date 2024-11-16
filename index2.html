@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=VT323&family=Voltaire&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 10px;
+        }
+        .container {
+            width: 100%;
+        }
+        .item {
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            padding-bottom: 30px;
+        }
+        .text {
+            margin: 47px 0;
+            font-weight: 700;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 25px;
+            color: rgba(233, 65, 65, 1);
+        }
+        
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-item {
+            font-family: 'Voltaire', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            width: 25%;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid red ;
+            color: rgba(190, 182, 182, 1);
+        }
+        .choice {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 17px 17px;
+            margin-top: 190px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            width: 100%;
+            height: 230px;
+            background: rgba(247, 186, 131, 0.15);
+            border-radius: 10px;
+            padding: 5px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+        }
+        .card .heart{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            color: rgba(84, 84, 84, 1);
+        }
+
+        .card .img{
+            width: 80%;
+            height: 70%;
+            object-fit: contain;
+            transition: transform 0.3s linear;
+        }
+        .card .name{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .card .price{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 20px;
+        }
+        .card label{
+            font-family: 'Voltaire', sans-serif;
+            font-size: 20px;
+            color: rgba(247, 186, 131, 1);
+        }
+        .content{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            width: 47%;
+            color: black;
+        }
+        .card:active .img{
+            transform: scale(1.1);
+        }
+        .card:active{
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <div class="container">
+        <div class="item">
+            <p class="text"><strong>The world's Best Bike</strong></p>
+            <div class="button">
+                <div class="btn-item" style="color: red;">All</div>
+                <div class="btn-item">Roadbike</div>   
+                <div class="btn-item">Mountain</div>
+            </div>
+        </div> 
+
+        <div class="choice"> 
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="index4.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img2.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pina Moutai</h2>
+                        <h3 class="price"><label>$</label> 1700</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="index5.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img3.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pina Bike</h2>
+                        <h3 class="price"><label>$</label> 1500</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="index6.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img4.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1900</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="index7.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img5.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 2700</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="index8.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img6.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1350</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="index3.html">
+                <div class="card">
+                    <img class="heart" src="../html/Vector.svg" alt="">
+                    <img class="img" src="../html/img1.png" alt="">
+                    <div class="content">
+                        <h2 class="name">Pinarello</h2>
+                        <h3 class="price"><label>$</label> 1800</h3>
+                    </div>
+                </div>
+            </a>
+
+            
+
+
+        </div>
+        </div>
+</body>
+</html>
